@@ -4,8 +4,8 @@ export const CardProfile = (props) => {
     const { tittle, link, content, image, subTittle } = props
     return (
         <>
-        <Link to={`/${link}`} className="flex flex-col items-center justify-center gap-6 px-6 py-8 bg-white rounded-lg shadow-md hover:text-green-600 lg:flex-row shadow-indigo-100">
-            <div className="flex px-10 pt-4 overflow-hidden bg-gray-300 w-60 rounded-br-xl rounded-tl-xl h-25">
+        <Link to={`/${link}`} className="flex flex-col items-center justify-center gap-6 px-6 py-8 overflow-auto bg-white rounded-lg shadow-md hover:text-green-600 lg:flex-row shadow-indigo-100">
+            <div className="flex px-10 pt-4 overflow-hidden bg-gradient-to-br from-green-200 via-green-400 to-green-600 drop-shadow-lg w-60 rounded-br-xl rounded-tl-xl h-25">
                 <img
                     alt=""
                     src={image}
