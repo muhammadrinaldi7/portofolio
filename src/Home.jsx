@@ -1,6 +1,3 @@
-import Navigation from "./component/Navigation";
-import Resume from "./component/Resume";
-import signature from "./assets/img/signature.png"
 import profile from "./assets/img/profile.png"
 import logo from "./assets/img/logo.png"
 import fav from "./assets/img/fav.png"
