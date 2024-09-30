@@ -1,6 +1,3 @@
-import Navigation from "./component/Navigation";
-import Resume from "./component/Resume";
-import signature from "./assets/img/signature.png"
 import profile from "./assets/img/profile.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBriefcase, faChevronDown, faFootball, faFutbol, faUserGraduate } from "@fortawesome/free-solid-svg-icons";
