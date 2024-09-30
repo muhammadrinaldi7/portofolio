@@ -6,14 +6,15 @@ import AOS from "aos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "aos/dist/aos.css";
 import { Link, NavLink } from "react-router-dom";
-import { faBriefcase, faCode, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
+
+import { faBriefcase, faCode, faHome, faUser, faAddressCard } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
     return (
         <>
         <header>
             <div className="container mx-auto">
                 {/* Large */}
-                <div className="flex-row items-center justify-between hidden py-8 md:flex" data-aos="zoom-in">
+                <div className="flex-row items-center justify-between hidden px-12 py-8 md:flex" >
                     <a href="./index.html" className="logo">
                         <img src={logo} className="w-32" alt="" />
                     </a>
@@ -61,7 +62,7 @@ const Header = () => {
                             </li>
                         </ul>
                     </nav>
-                    <a href="./contact.html" className="px-6 py-2 text-white hover:bg-[#0dce6f] bg-black rounded-lg">Let's talk</a>
+                    <NavLink to="/contact" className="px-6 py-2 text-white hover:bg-[#0dce6f] bg-black rounded-lg">Let's talk</NavLink>
                 </div>
                 {/* Small */}
                 <div className="fixed z-50 flex flex-col justify-center w-16 h-screen gap-3 bg-transparent right-2 lg:hidden">         
@@ -146,6 +147,21 @@ const Header = () => {
                                         className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible"
                                     >
                                         Project
+                                    </span>
+                                    </NavLink>
+                                </li>
+                                <li>
+                                <NavLink
+                                    to={"/contact"}
+                                    className={({ isActive }) =>
+                                        `group relative flex justify-center rounded px-2 py-1.5 ${isActive ? ' text-green-500' : 'text-gray-500'} hover:text-green-500`
+                                      }
+                                    >
+                                        <FontAwesomeIcon icon={faAddressCard} className="w-5 h-5" />
+                                    <span
+                                        className="invisible absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white group-hover:visible"
+                                    >
+                                        Contact
                                     </span>
                                     </NavLink>
                                 </li>

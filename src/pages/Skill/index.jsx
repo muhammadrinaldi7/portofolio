@@ -2,14 +2,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Footer from "../../component/Footer"
 import Header from "../../component/Header"
 import { faChartLine, faCode, faCodeBranch, faCodeCommit, faDatabase, faLaptopCode, faLightbulb } from "@fortawesome/free-solid-svg-icons"
-import { faBootstrap, faCss3, faFreeCodeCamp, faHtml5, faJs, faLaravel, faReact } from "@fortawesome/free-brands-svg-icons"
+import { faBootstrap, faCss3, faFreeCodeCamp, faHtml5, faJava, faJs, faLaravel, faPhp, faReact } from "@fortawesome/free-brands-svg-icons"
 import sap from "../../assets/img/sap.png"
 import sql from "../../assets/img/sql.png"
 import { CardSkill } from "../../component/Card/CardSkill"
 import Aos from "aos"
 import "aos/dist/aos.css"
+import { useEffect } from "react"
 const Skill = () => {
-
+    useEffect(() => {
+        Aos.init({
+            easing: "ease-out",
+            duration: 1500, // Durasi animasi (milidetik)
+            once: false, // Animasi hanya muncul sekali
+        });
+    }, []);
     return (
         <>
             <Header />
@@ -63,28 +70,19 @@ const Skill = () => {
                                 <CardSkill skill="JavaScript" >
                                     <FontAwesomeIcon icon={faJs} size="4x"/>
                                 </CardSkill>
+                                <CardSkill skill="Java" >
+                                    <FontAwesomeIcon icon={faJava} size="4x"/>
+                                </CardSkill>
+                                <CardSkill skill="PHP" >
+                                    <FontAwesomeIcon icon={faPhp} size="4x"/>
+                                </CardSkill>
                                 <CardSkill skill="SQL Language" >
                                     <img src={sql} className="w-[4em]" alt="" />
                                 </CardSkill>
                                 <CardSkill skill="SAP Bussiness One" >
                                 <img src={sap} className="w-[4em]" alt="" />
                                 </CardSkill>
-                                
-                                
-                                
                             </div>
-                            {/* <div className="p-6 bg-gray-100 rounded-xl">
-                                <h1 className="text-lg font-semibold uppercase">Laravel</h1>
-                            </div>
-                            <div className="p-6 bg-gray-100 rounded-xl">
-                                <h1 className="text-lg font-semibold uppercase">Laravel</h1>
-                            </div>
-                            <div className="p-6 bg-gray-100 rounded-xl">
-                                <h1 className="text-lg font-semibold uppercase">Laravel</h1>
-                            </div>
-                            <div className="p-6 bg-gray-100 rounded-xl">
-                                <h1 className="text-lg font-semibold uppercase">Laravel</h1>
-                            </div> */}
                         </div>
                     </div>
                 </div>

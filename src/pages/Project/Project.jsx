@@ -13,15 +13,23 @@ import sijantan from "../../assets/img/sijantan.png"
 import sibetina from "../../assets/img/sibetina.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Project = () => {
+    useEffect(() => {
+        Aos.init({
+            easing: "ease-out",
+            duration: 1500, // Durasi animasi (milidetik)
+            once: false, // Animasi hanya muncul sekali
+        });
+    }, []);
     return (
         <>
             <Header />
             <section className="container mx-auto">
                 <div className="flex items-center justify-center w-full py-8" data-aos="fade-up">
                     <FontAwesomeIcon icon={faCode} className="text-green-500" size="2x"/>
-                    <h1 className="mx-4 text-2xl font-bold text-center uppercase lg:text-4xl">ALL Project</h1>
+                    <h1 className="mx-4 text-2xl font-bold text-center uppercase lg:text-4xl">SHOW Project</h1>
                     <FontAwesomeIcon icon={faCode} className="text-green-500" size="2x"/>
                 </div>
                 <div className="grid grid-cols-1 gap-8 p-2 lg:grid-cols-3" data-aos="zoom-in">

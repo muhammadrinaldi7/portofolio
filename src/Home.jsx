@@ -9,7 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Impor CSS AOS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBriefcase, faChevronDown, faFootball, faFutbol, faUserGraduate } from "@fortawesome/free-solid-svg-icons";
-import { faBootstrap, faFreeCodeCamp, faGithub, faJava, faJs, faLaravel, faLinkedin, faPhp, faReact, faTwitter, faUpwork } from "@fortawesome/free-brands-svg-icons";
+import { faBootstrap, faFreeCodeCamp, faGithub, faJava, faJs, faLaravel, faLinkedin, faPhp, faReact, faTwitter, faUpwork, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import work from "./assets/img/work.jpg"
 import {  CardItem } from "./component/Card/CardItem";
 import { CardProfile } from "./component/Card/CardProfile";
@@ -35,7 +35,7 @@ const Home = () => {
         <Header />
         <main>
             {/* Profile */}
-            <div className="container px-4 py-2  mx-auto bg-[#f8f9fa]">
+            <div className="container px-4 py-2 mx-auto bg-[#f8f9fa]">
                 <div className="flex flex-col gap-8 p-2 lg:flex-row " data-aos="fade-up">
                     <CardProfile 
                         content="Muhammad Rinaldi" 
@@ -82,11 +82,11 @@ const Home = () => {
                         </CardItem2>
                     </div>
                     <div data-aos="zoom-in">
-                        <CardItem2 content="Profile" tittle="Stay with me">
+                        <CardItem2 content="Profile" link="contact" tittle="Stay with me">
                             <div className="flex items-center justify-center w-full h-32 gap-4 overflow-auto">
                                 <FontAwesomeIcon icon={faGithub} className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 lg:w-18 lg:h-18"/>
                                 <FontAwesomeIcon icon={faLinkedin} className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 lg:w-18 lg:h-18"/>
-                                <FontAwesomeIcon icon={faFutbol} className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 lg:w-18 lg:h-18"/>
+                                <FontAwesomeIcon icon={faWhatsapp} className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 lg:w-18 lg:h-18"/>
                             </div>
                         </CardItem2>
                     </div>
@@ -118,7 +118,7 @@ const Home = () => {
                         </CardItem2>
                     </div>
                     <div className="lg:col-span-2" data-aos="fade-up">
-                        <CardItem2>
+                        <CardItem2 link="contact">
                             <div className="flex flex-col justify-center w-full h-32 gap-4 text-3xl text-left">
                                 <p>Let's</p>
                                 <p >work <span className="text-[#0dce6f]">together.</span></p>

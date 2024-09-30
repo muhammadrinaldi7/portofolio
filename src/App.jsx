@@ -5,6 +5,7 @@ import Summary from "./pages/Profile/Summary";
 import AboutMe from "./pages/Profile/AboutMe";
 import Project from "./pages/Project/Project";
 import Skill from "./pages/Skill";
+import Contact from "./pages/Contact";
 
 const App = () =>{
 
@@ -19,6 +20,7 @@ const App = () =>{
           <Route path="/project" element={<Project/>} />
           <Route path="/skill" element={<Skill/>} />
           <Route path="/works" element={<AboutMe/>} />
+          <Route path="/contact" element={<Contact/>} />
           <Route path="*" element={<Home/>} /> 
         </Routes>
       </Layout>
