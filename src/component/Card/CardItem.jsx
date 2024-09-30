@@ -1,10 +1,12 @@
+import React from "react"
+import { Link } from "react-router-dom"
 import star from "../../assets/img/star.svg"
 
 export const CardItem = (props) => {
-    const { tittle, content, image } = props
+    const { tittle,link, content, image } = props
     return (
         <>
-        <a href="#" className="flex flex-col justify-center w-full p-4 text-left bg-white rounded-lg shadow-md hover:text-green-600 shadow-indigo-100">
+        <Link to={`${link}`} className="flex flex-col justify-center w-full p-4 overflow-auto text-left bg-white rounded-lg shadow-md hover:text-green-600 shadow-indigo-100">
             <div className="flex items-center justify-center w-full h-32 overflow-hidden lg:w-full">
                 <img
                     alt=""
@@ -102,7 +104,8 @@ export const CardItem = (props) => {
             </div>
             </div> */}
         </div>
-        </a>
+
+        </Link>
         </>
     )
 }
