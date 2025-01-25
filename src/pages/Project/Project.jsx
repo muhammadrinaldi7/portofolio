@@ -23,7 +23,7 @@ const Project = () => {
     Aos.init({
       easing: "ease-out",
       duration: 1500, // Durasi animasi (milidetik)
-      once: false, // Animasi hanya muncul sekali
+      once: false,
     });
   }, []);
   return (
