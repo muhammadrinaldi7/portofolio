@@ -13,7 +13,7 @@ const Summary = () => {
     Aos.init({
       easing: "ease-out",
       duration: 1500,
-      once: true, // Animasi hanya muncul sekali
+      once: true,
     });
   }, []);
   return (
