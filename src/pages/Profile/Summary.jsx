@@ -12,7 +12,7 @@ const Summary = () => {
   useEffect(() => {
     Aos.init({
       easing: "ease-out",
-      duration: 1500, // Durasi animasi (milidetik)
+      duration: 1500,
       once: true, // Animasi hanya muncul sekali
     });
   }, []);
