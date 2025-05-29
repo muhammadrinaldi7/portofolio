@@ -96,10 +96,11 @@ const AboutMe = () => {
               </p>
               <p className="text-justify text-gray-600">
                 Saat ini, saya sedang mendalami teknologi yang baru bagi saya,
-                yaitu React.js, melalui bootcamp di bimbing.id. Melalui program
-                tersebut, saya telah menghasilkan beberapa proyek dengan
-                kombinasi frontend menggunakan React.js dan backend RESTful API
-                dengan Laravel.
+                yaitu NextJs dengan SEO Optimization, sebelumnya saya belajar
+                teknologi react.js melalui bootcamp di bimbing.id. Melalui
+                program tersebut, saya telah menghasilkan beberapa proyek dengan
+                kombinasi frontend menggunakan React.js/NextJs dan backend
+                Restful API dengan Laravel.
               </p>
               <p className="text-justify text-gray-600">
                 Saya memiliki kemampuan analisis yang baik serta pemahaman
@@ -116,7 +117,26 @@ const AboutMe = () => {
                 Experience
               </p>
               <CardExpEdu
-                period="Oktober 2024 - Sekarang"
+                period="Februari 2025 - sekarang"
+                position="IT Implementor"
+                company="PT. Nuansa Cerah Informasi"
+              >
+                <ul className="ml-3 list-disc list-inside">
+                  <li>
+                    Menangani pengelolaan dan pemeliharaan software dan hardware
+                    serta memberikan dukungan teknis kepada pengguna.
+                  </li>
+                  <li>
+                    Menangani komplains dari user terkait software dan hardware.
+                  </li>
+                  <li>
+                    Memastikan sistem berjalan dengan baik diseluruh unit rumah
+                    sakit dan melakukan troubleshooting jika terjadi masalah.
+                  </li>
+                </ul>
+              </CardExpEdu>
+              <CardExpEdu
+                period="Oktober 2024 - Februari 2025"
                 position="IT Support/Programmer"
                 company="PT. Nansarunai Mega Vision"
               >

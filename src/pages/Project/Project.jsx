@@ -12,6 +12,7 @@ import nansarunai from "../../assets/img/nansarunai.png";
 import sijantan from "../../assets/img/sijantan.png";
 import sibetina from "../../assets/img/sibetina.png";
 import travelyou from "../../assets/img/travelyou.png";
+import showcar from "../../assets/img/showcar.png";
 import api from "../../assets/img/api.png";
 import rentcar from "../../assets/img/rentcar.png";
 import Aos from "aos";
@@ -45,15 +46,34 @@ const Project = () => {
           data-aos="zoom-in"
         >
           <CardProject
+            image={showcar}
+            links="https://showroomcar-fe.vercel.app/"
+            title="Next JS & Backend API Laravel"
+            project="Web Showroom Mobil"
+          />
+
+          <CardProject
+            image={rentcar}
+            links="https://rentalline.vercel.app/"
+            title="Next JS & Backend API Laravel (Payment Gateway Xendit)"
+            project="Web App Rental Mobil"
+          />
+          <CardProject
+            image={travelyou}
+            links="https://travelyou.vercel.app/"
+            title="Next JS & Backend API Laravel"
+            project="Aplikasi Transaksi Travel"
+          />
+          <CardProject
             image={sijantan}
             links="https://sipp.web.id/"
-            title="React Js & Laravel"
+            title="React Js & Backend API Laravel"
             project="Aplikasi Monitoring Bayi Bebas Penyakit Jantung Bawaan"
           />
           <CardProject
             image={sibetina}
             links="https://temansetiaibuhamil.web.id/"
-            title="React Js & Laravel"
+            title="React Js & Backend API Laravel"
             project="Aplikasi Monitoring Ibu Hamil Bebas Anemia"
           />
           <CardProject
@@ -68,48 +88,28 @@ const Project = () => {
             title="Html, css, js"
             project="Landing Page Meatgenkz"
           />
-          <CardProject
-            image={petshop}
-            links="#"
-            title="Laravel"
-            project="Web Petshop"
-          />
+          <CardProject image={petshop} title="Laravel" project="Web Petshop" />
           <CardProject
             image={bpn}
-            links="#"
             title="CodeIgniter"
             project="Sistem Informasi Permohonan Pengukuran"
           />
           <CardProject
             image={simpeg}
-            links="#"
             title="CodeIgniter"
             project="Sistem Informasi Kepegawaian"
           />
           <CardProject
             image={absensi}
-            links="#"
             title="CodeIgniter"
             project="Sistem Informasi Absensi"
           />
-          <CardProject
-            image={travelyou}
-            links="https://travelyou.vercel.app/"
-            title="Next JS"
-            project="Aplikasi Transaksi Travel"
-          />
+
           <CardProject
             image={api}
             links="https://rent-car-api.temansetiaibuhamil.web.id/"
             title="Laravel API"
             project="Backend API App Rental Mobil"
-          />
-
-          <CardProject
-            image={rentcar}
-            links="https://rentalline.vercel.app/"
-            title="Next JS"
-            project="Web App Rental Mobil"
           />
         </div>
       </section>
