@@ -66,13 +66,13 @@ const Project = () => {
           />
           <CardProject
             image={sijantan}
-            links="https://sipp.web.id/"
+            links="https://sipp.banjarbarukota.go.id/"
             title="React Js & Backend API Laravel"
             project="Aplikasi Monitoring Bayi Bebas Penyakit Jantung Bawaan"
           />
           <CardProject
             image={sibetina}
-            links="https://temansetiaibuhamil.web.id/"
+            links="https://temansetiaibuhamil.banjarbarukota.go.id/"
             title="React Js & Backend API Laravel"
             project="Aplikasi Monitoring Ibu Hamil Bebas Anemia"
           />
