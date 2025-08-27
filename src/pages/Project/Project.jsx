@@ -13,6 +13,7 @@ import sijantan from "../../assets/img/sijantan.png";
 import sibetina from "../../assets/img/sibetina.png";
 import travelyou from "../../assets/img/travelyou.png";
 import showcar from "../../assets/img/showcar.png";
+import syb from "../../assets/img/syb.png";
 import api from "../../assets/img/api.png";
 import rentcar from "../../assets/img/rentcar.png";
 import Aos from "aos";
@@ -45,6 +46,12 @@ const Project = () => {
           className="grid grid-cols-1 gap-8 p-2 lg:grid-cols-3"
           data-aos="zoom-in"
         >
+          <CardProject
+            image={syb}
+            links="https://syihabbeta.nidzaredwan.com"
+            title="Laravel Blade + Livewire"
+            project="E-commerce Syihab Store"
+          />
           <CardProject
             image={showcar}
             links="https://showroomcar-fe.vercel.app/"
