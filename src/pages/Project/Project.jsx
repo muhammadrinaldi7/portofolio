@@ -48,7 +48,7 @@ const Project = () => {
         >
           <CardProject
             image={syb}
-            links="https://syihabbeta.nidzaredwan.com"
+            links="https://syihabstore.id"
             title="Laravel Blade + Livewire"
             project="E-commerce Syihab Store"
           />
