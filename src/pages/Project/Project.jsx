@@ -56,7 +56,7 @@ const Project = () => {
           <CardProject
             image={syb}
             links="https://syihabstore.id"
-            title="Laravel Blade + Livewire(Auth by fortfy+Socialite)"
+            title="Laravel Blade + Livewire"
             project="E-commerce Syihab Store"
           />
           <CardProject
