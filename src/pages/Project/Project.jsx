@@ -14,6 +14,7 @@ import sibetina from "../../assets/img/sibetina.png";
 import travelyou from "../../assets/img/travelyou.png";
 import showcar from "../../assets/img/showcar.png";
 import syb from "../../assets/img/syb.png";
+import pdl from "../../assets/img/pdl.png";
 import api from "../../assets/img/api.png";
 import rentcar from "../../assets/img/rentcar.png";
 import Aos from "aos";
@@ -47,9 +48,15 @@ const Project = () => {
           data-aos="zoom-in"
         >
           <CardProject
+            image={pdl}
+            links="https://padelwotn.syihabstore.id"
+            title="Laravel Blade + Livewire"
+            project="Booking Online Leoon Padel"
+          />
+          <CardProject
             image={syb}
             links="https://syihabstore.id"
-            title="Laravel Blade + Livewire"
+            title="Laravel Blade + Livewire(Auth by fortfy+Socialite)"
             project="E-commerce Syihab Store"
           />
           <CardProject
