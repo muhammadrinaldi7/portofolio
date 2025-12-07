@@ -49,7 +49,7 @@ const Project = () => {
         >
           <CardProject
             image={pdl}
-            links="https://padelwotn.syihabstore.id"
+            links="https://padeltown.syihabstore.id"
             title="Laravel Blade + Livewire"
             project="Booking Online Leoon Padel"
           />
